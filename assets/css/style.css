@@ -1,0 +1,204 @@
+@import url(../fonts/fonts.css);
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  width: 100vw; }
+  body header {
+    font-family: Roboto Slab; }
+    body header nav {
+      position: fixed;
+      width: 80%;
+      left: 10%;
+      z-index: 1; }
+      body header nav ul li {
+        display: inline-block;
+        margin: 10px 20px; }
+      body header nav div.nav-link {
+        float: left; }
+      body header nav div.nav-langages {
+        float: right;
+        margin: 10px 20px; }
+    body header section {
+      height: 80vh;
+      background-image: url("../img/background.jpg");
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+      body header section article {
+        position: relative;
+        height: 100%; }
+        body header section article div {
+          position: absolute;
+          bottom: 20px;
+          color: #ffffff;
+          width: 55%; }
+          body header section article div h1 {
+            font-size: 5em;
+            font-family: Roboto Slab Bold; }
+          body header section article div h2 {
+            font-size: 3em;
+            font-family: Roboto Slab Light; }
+  body h2 {
+    font-family: Roboto Slab Bold; }
+  body h2, body h3 {
+    text-transform: uppercase; }
+  body section > article {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1.5% 0; }
+    body section > article h2 {
+      font-size: 2em;
+      margin: 4% 0; }
+  body section#firstSection {
+    color: #ffffff;
+    background-color: #23c7ee;
+    padding: 5% 0; }
+    body section#firstSection p {
+      width: 80%;
+      font-family: Roboto Slab;
+      font-size: 1.3em; }
+    body section#firstSection h2 {
+      margin-top: 10px;
+      width: 60%;
+      font-family: Roboto Slab Bold;
+      margin-bottom: 0; }
+  body section#secondSection h2 {
+    font-family: Roboto Slab Bold;
+    color: #23c7ee;
+    margin: 4% 0; }
+  body section#secondSection article > article {
+    display: inline-block;
+    width: 33%;
+    font-family: "OpenSans Bold";
+    font-size: 1.3em; }
+    body section#secondSection article > article h3 {
+      color: white;
+      display: inline;
+      padding: 5px; }
+      body section#secondSection article > article h3.blue {
+        background: #0094c9; }
+      body section#secondSection article > article h3.turquoise {
+        background: #18d4c6; }
+      body section#secondSection article > article h3.green {
+        background: #a3d55f; }
+    body section#secondSection article > article ul {
+      color: #706a6f; }
+      body section#secondSection article > article ul li {
+        margin: 25px 0; }
+  body section#thirdSection {
+    background: #00bcb5;
+    color: #ffffff;
+    padding: 3% 0; }
+    body section#thirdSection div {
+      display: inline-block; }
+      body section#thirdSection div:first-child {
+        width: 78%; }
+      body section#thirdSection div:last-child {
+        width: 20%; }
+      body section#thirdSection div p {
+        font-family: "Roboto Slab Light";
+        font-size: 3em;
+        text-align: justify;
+        padding-bottom: 25px; }
+      body section#thirdSection div footer {
+        font-family: "Roboto Slab Bold";
+        text-align: right;
+        margin: 2% 0% 2% 0; }
+  body section#fourthSection h2 {
+    color: #23c7ee; }
+  body section#fourthSection > article > header {
+    padding: 3% 10%;
+    width: 100vw;
+    margin: 0 -13%;
+    background-image: url("../img/paris.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #ffffff; }
+    body section#fourthSection > article > header article {
+      width: 35%;
+      margin: 3% 0; }
+      body section#fourthSection > article > header article:first-child h3 {
+        font-family: "OpenSans Bold";
+        display: inline-block; }
+      body section#fourthSection > article > header article:last-child h2 {
+        color: #ffffff;
+        margin: 3% 0 0 0px;
+        font-size: 3em; }
+      body section#fourthSection > article > header article:last-child p {
+        font-family: "Roboto Slab Light";
+        font-size: 3.5em;
+        text-transform: uppercase; }
+  body section#fourthSection > article > article {
+    margin: 5% 0;
+    position: relative; }
+    body section#fourthSection > article > article > article {
+      clear: both; }
+    body section#fourthSection > article > article section {
+      width: 48%; }
+      body section#fourthSection > article > article section.left {
+        float: left; }
+      body section#fourthSection > article > article section.right {
+        float: right; }
+      body section#fourthSection > article > article section.text {
+        padding-top: 12%; }
+      body section#fourthSection > article > article section h4 {
+        color: #23c7ee;
+        text-transform: uppercase;
+        font-family: "OpenSans Bold"; }
+      body section#fourthSection > article > article section img {
+        width: 100%; }
+      body section#fourthSection > article > article section p {
+        color: #706a6f;
+        font-size: 2em;
+        text-transform: uppercase;
+        font-family: "Roboto Slab Light"; }
+        body section#fourthSection > article > article section p .bold {
+          font-family: "Roboto Slab Bold"; }
+  body section#fifthSection {
+    clear: both;
+    background-color: #23c7ee; }
+    body section#fifthSection article {
+      padding: 5% 0; }
+      body section#fifthSection article div {
+        display: inline-block; }
+        body section#fifthSection article div:first-child {
+          float: left;
+          width: 20%;
+          color: #fff; }
+          body section#fifthSection article div:first-child p {
+            font-size: 2.5em;
+            font-family: "Roboto Slab Light"; }
+        body section#fifthSection article div:last-child {
+          width: 79%;
+          text-align: center; }
+          body section#fifthSection article div:last-child li {
+            display: inline-block;
+            width: 30%; }
+  body section#sixSection {
+    background-color: #f3f2f2; }
+    body section#sixSection article {
+      color: #706a6f; }
+      body section#sixSection article > ul > li {
+        background-color: white;
+        display: inline-block;
+        width: 30%;
+        margin: 0 3% 2% 0; }
+        body section#sixSection article > ul > li div {
+          position: relative;
+          padding: 5%; }
+          body section#sixSection article > ul > li div ul {
+            top: 30%;
+            right: 15%;
+            left: 30%;
+            position: absolute; }
+            body section#sixSection article > ul > li div ul h3 {
+              font-family: "Roboto Slab Bold"; }
+            body section#sixSection article > ul > li div ul h4 {
+              font-family: "Roboto Slab";
+              font-size: 0.9em;
+              margin-top: 2%; }
+
+/*# sourceMappingURL=style.css.map */
