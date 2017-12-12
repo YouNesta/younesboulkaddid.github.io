@@ -2,29 +2,55 @@
 body {
   min-height: 100vh;
   overflow-x: hidden;
-  width: 100vw; }
+  width: 100vw;
+  background-color: #f3f2f2; }
   body header {
     font-family: Roboto Slab; }
+    body header #nav {
+      width: 100vw;
+      height: 60px;
+      position: fixed;
+      z-index: 1; }
     body header nav {
       position: fixed;
       width: 80%;
       left: 10%;
-      z-index: 1; }
+      z-index: 1;
+      /* unvisited link */
+      /* visited link */
+      /* mouse over link */
+      /* selected link */ }
+      body header nav a:link {
+        color: white; }
+      body header nav a:visited {
+        color: white; }
+      body header nav a:hover {
+        color: white; }
+      body header nav a:active {
+        color: white; }
       body header nav ul li {
         display: inline-block;
-        margin: 10px 20px; }
+        margin: 25px 20px; }
+      body header nav div a {
+        text-decoration: none; }
       body header nav div.nav-link {
-        float: left; }
+        float: left;
+        font-family: "Roboto Slab Bold"; }
       body header nav div.nav-langages {
+        font-family: "Roboto Slab Light";
+        color: white;
         float: right;
-        margin: 10px 20px; }
+        margin: 25px 20px; }
+        body header nav div.nav-langages .current {
+          font-family: "Roboto Slab Bold"; }
     body header section {
       height: 80vh;
-      background-image: url("../img/background.jpg");
+      background-image: url("../img/background.png");
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
-      background-size: cover; }
+      background-size: cover;
+      padding: 40px 0; }
       body header section article {
         position: relative;
         height: 100%; }
@@ -34,10 +60,11 @@ body {
           color: #ffffff;
           width: 55%; }
           body header section article div h1 {
-            font-size: 5em;
-            font-family: Roboto Slab Bold; }
+            font-size: 50px;
+            font-family: Roboto Slab Bold;
+            text-transform: uppercase; }
           body header section article div h2 {
-            font-size: 3em;
+            font-size: 43px;
             font-family: Roboto Slab Light; }
   body h2 {
     font-family: Roboto Slab Bold; }
@@ -48,47 +75,52 @@ body {
     margin: 0 auto;
     padding: 1.5% 0; }
     body section > article h2 {
-      font-size: 2em;
+      font-size: 34px;
       margin: 4% 0; }
   body section#firstSection {
     color: #ffffff;
     background-color: #23c7ee;
-    padding: 5% 0; }
+    padding: 5% 0;
+    line-height: 40px; }
     body section#firstSection p {
       width: 80%;
       font-family: Roboto Slab;
-      font-size: 1.3em; }
+      font-size: 30px; }
     body section#firstSection h2 {
       margin-top: 10px;
       width: 60%;
       font-family: Roboto Slab Bold;
       margin-bottom: 0; }
-  body section#secondSection h2 {
-    font-family: Roboto Slab Bold;
-    color: #23c7ee;
-    margin: 4% 0; }
-  body section#secondSection article > article {
-    display: inline-block;
-    width: 33%;
-    font-family: "OpenSans Bold";
-    font-size: 1.3em; }
-    body section#secondSection article > article h3 {
-      color: white;
-      display: inline;
-      padding: 5px; }
-      body section#secondSection article > article h3.blue {
-        background: #0094c9; }
-      body section#secondSection article > article h3.turquoise {
-        background: #18d4c6; }
-      body section#secondSection article > article h3.green {
-        background: #a3d55f; }
-    body section#secondSection article > article ul {
-      color: #706a6f; }
-      body section#secondSection article > article ul li {
-        margin: 25px 0; }
+  body section#secondSection {
+    margin: 0 0 2% 0; }
+    body section#secondSection h2 {
+      font-family: Roboto Slab Bold;
+      color: #23c7ee;
+      margin: 4% 0;
+      font-size: 34px; }
+    body section#secondSection article > article {
+      display: inline-block;
+      width: 33%;
+      font-family: "OpenSans Bold";
+      font-size: 1.3em; }
+      body section#secondSection article > article h3 {
+        color: white;
+        display: inline;
+        padding: 5px 10px; }
+        body section#secondSection article > article h3.blue {
+          background: #0094c9; }
+        body section#secondSection article > article h3.turquoise {
+          background: #18d4c6; }
+        body section#secondSection article > article h3.green {
+          background: #a3d55f; }
+      body section#secondSection article > article ul {
+        color: #706a6f; }
+        body section#secondSection article > article ul li {
+          margin: 25px 0; }
   body section#thirdSection {
     background: #00bcb5;
     color: #ffffff;
+    height: 210px;
     padding: 3% 0; }
     body section#thirdSection div {
       display: inline-block; }
@@ -98,15 +130,17 @@ body {
         width: 20%; }
       body section#thirdSection div p {
         font-family: "Roboto Slab Light";
-        font-size: 3em;
+        font-size: 36px;
         text-align: justify;
         padding-bottom: 25px; }
       body section#thirdSection div footer {
         font-family: "Roboto Slab Bold";
         text-align: right;
-        margin: 2% 0% 2% 0; }
+        margin: 2% 0 2% 0;
+        font-size: 21px; }
   body section#fourthSection h2 {
-    color: #23c7ee; }
+    color: #23c7ee;
+    margin: 4% 0 2% 0; }
   body section#fourthSection > article > header {
     padding: 3% 10%;
     width: 100vw;
@@ -118,18 +152,18 @@ body {
     background-size: 100%;
     color: #ffffff; }
     body section#fourthSection > article > header article {
-      width: 35%;
-      margin: 3% 0; }
+      width: 23%;
+      margin: 1% 2.5%; }
       body section#fourthSection > article > header article:first-child h3 {
         font-family: "OpenSans Bold";
         display: inline-block; }
       body section#fourthSection > article > header article:last-child h2 {
         color: #ffffff;
         margin: 3% 0 0 0px;
-        font-size: 3em; }
+        font-size: 32px; }
       body section#fourthSection > article > header article:last-child p {
         font-family: "Roboto Slab Light";
-        font-size: 3.5em;
+        font-size: 32px;
         text-transform: uppercase; }
   body section#fourthSection > article > article {
     margin: 5% 0;
@@ -143,23 +177,28 @@ body {
       body section#fourthSection > article > article section.right {
         float: right; }
       body section#fourthSection > article > article section.text {
-        padding-top: 12%; }
+        padding-top: 10%; }
+      body section#fourthSection > article > article section article {
+        margin: 0;
+        width: 100%; }
       body section#fourthSection > article > article section h4 {
         color: #23c7ee;
         text-transform: uppercase;
-        font-family: "OpenSans Bold"; }
+        font-family: "OpenSans Bold";
+        font-size: 18px; }
       body section#fourthSection > article > article section img {
         width: 100%; }
       body section#fourthSection > article > article section p {
         color: #706a6f;
-        font-size: 2em;
+        font-size: 28px;
         text-transform: uppercase;
         font-family: "Roboto Slab Light"; }
         body section#fourthSection > article > article section p .bold {
           font-family: "Roboto Slab Bold"; }
   body section#fifthSection {
     clear: both;
-    background-color: #23c7ee; }
+    background-color: #23c7ee;
+    border-top: 50px solid #f3f2f2; }
     body section#fifthSection article {
       padding: 5% 0; }
       body section#fifthSection article div {
@@ -173,32 +212,126 @@ body {
             font-family: "Roboto Slab Light"; }
         body section#fifthSection article div:last-child {
           width: 79%;
-          text-align: center; }
+          text-align: right; }
           body section#fifthSection article div:last-child li {
             display: inline-block;
-            width: 30%; }
-  body section#sixSection {
+            width: 30%;
+            vertical-align: middle; }
+  body section#sixthSection {
     background-color: #f3f2f2; }
-    body section#sixSection article {
-      color: #706a6f; }
-      body section#sixSection article > ul > li {
+    body section#sixthSection article {
+      color: #706a6f;
+      padding: 0; }
+      body section#sixthSection article h2 {
+        margin-top: 60px;
+        margin-bottom: 36px; }
+      body section#sixthSection article > ul > li {
         background-color: white;
         display: inline-block;
         width: 30%;
         margin: 0 3% 2% 0; }
-        body section#sixSection article > ul > li div {
+        body section#sixthSection article > ul > li div {
           position: relative;
           padding: 5%; }
-          body section#sixSection article > ul > li div ul {
+          body section#sixthSection article > ul > li div ul {
             top: 30%;
-            right: 15%;
-            left: 30%;
+            right: 2vw;
+            left: 9.5vw;
             position: absolute; }
-            body section#sixSection article > ul > li div ul h3 {
+            body section#sixthSection article > ul > li div ul h3 {
               font-family: "Roboto Slab Bold"; }
-            body section#sixSection article > ul > li div ul h4 {
+            body section#sixthSection article > ul > li div ul h4 {
               font-family: "Roboto Slab";
               font-size: 0.9em;
               margin-top: 2%; }
+  body section#seventhSection h2 {
+    color: #23c7ee; }
+  body section#seventhSection > article {
+    padding: 0; }
+    body section#seventhSection > article > header {
+      padding: 3% 10%;
+      width: 100vw;
+      margin: 0 -13%;
+      background-image: url("../img/credo.jpg");
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      color: #ffffff; }
+      body section#seventhSection > article > header article {
+        width: 23%;
+        margin: 3% 3%;
+        padding: 60px 25px;
+        background-color: rgba(0, 0, 0, 0.5); }
+        body section#seventhSection > article > header article h2 {
+          color: #ffffff;
+          margin: 3% 0 25px 0px;
+          font-size: 34px; }
+        body section#seventhSection > article > header article p {
+          font-family: "Roboto Slab Light";
+          font-size: 24px;
+          line-height: 35px;
+          text-transform: uppercase; }
+    body section#seventhSection > article > article {
+      margin: 5% 0;
+      position: relative; }
+  body section#heigthSection {
+    background-color: #f3f2f2; }
+    body section#heigthSection h2 {
+      font-family: Roboto Slab Bold;
+      color: #23c7ee;
+      margin-top: 60px;
+      margin-bottom: 36px; }
+    body section#heigthSection article > article {
+      font-size: 1.3em;
+      height: 20vh;
+      background-color: white;
+      border: 30px solid white;
+      overflow: hidden; }
+      body section#heigthSection article > article div {
+        float: left; }
+        body section#heigthSection article > article div:first-child {
+          width: 45%; }
+          body section#heigthSection article > article div:first-child img {
+            max-width: 100%; }
+        body section#heigthSection article > article div:last-child {
+          border-left: 20px solid white;
+          box-sizing: border-box; }
+        body section#heigthSection article > article div h3 {
+          font-family: "Roboto Slab Bold";
+          color: #23c7ee;
+          display: inline;
+          font-size: 24px; }
+        body section#heigthSection article > article div p {
+          font-family: "Roboto Slab Light";
+          color: #706a6f;
+          font-size: 18px;
+          line-height: 25px; }
+        body section#heigthSection article > article div ul {
+          margin-top: 10px; }
+          body section#heigthSection article > article div ul li {
+            display: inline-block; }
+  body > footer {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #23c7ee; }
+    body > footer h3 {
+      font-family: "Roboto Slab Bold";
+      color: white;
+      font-size: 24px; }
+    body > footer form {
+      margin: 25px; }
+      body > footer form input {
+        height: 40px;
+        border: none;
+        font-family: "Roboto Slab";
+        font-size: 14px; }
+        body > footer form input[type="email"] {
+          width: 250px;
+          padding: 0 10px;
+          box-shadow: 0px 5px 0px #0094c9; }
+        body > footer form input[type="submit"] {
+          background-color: #0094c9;
+          color: #ffffff; }
 
 /*# sourceMappingURL=style.css.map */

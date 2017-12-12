@@ -4,32 +4,55 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
     <link rel="stylesheet" href="assets/css/reset.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+    <!-- Begin MailChimp Signup Form -->
+    <style type="text/css">
+        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            var scroll_start = 0;
+            var startchange = $('body');
+            var offset = startchange.offset();
+            $(document).scroll(function() {
+                scroll_start = $(this).scrollTop();
+                if(scroll_start > offset.top) {
+                    $('#nav').css('background-color', '#23c7ee');
+                } else {
+                    $('#nav').css('background-color', 'transparent');
+                }
+            });
+        });
+    </script>
 </head>
 <body>
 	<header>
-		<nav>
-			<div class="nav-link">
-				<ul>
-					<li><a href="">Présentation</a></li>
-					<li><a href="">Nos Réalisations</a></li>
-					<li><a href="">Nos Partenaires</a></li>
-					<li><a href="">Notre Équipe</a></li>
-					<li><a href="">Notre Crédo</a></li>
-					<li><a href="">Contact</a></li>
-				</ul>
-			</div>
-			<div class="nav-langages">
-				<a href="">FR</a>/<a href="">EN</a>
-			</div>
-		</nav>
+		<div id="nav">
+            <nav>
+                <div class="nav-link">
+                    <ul>
+                        <li><a href="">Présentation</a></li>
+                        <li><a href="">Nos Réalisations</a></li>
+                        <li><a href="">Nos Partenaires</a></li>
+                        <li><a href="">Notre Équipe</a></li>
+                        <li><a href="">Notre Crédo</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav-langages">
+                    <a href="" class="current">FR</a>/<a href="">EN</a>
+                </div>
+            </nav>
+        </div>
 		<section>
 			<article>
 				<div>
-					<h1>Missions  Publiques</h1>
-					<h2>Créateurs de  laboratoires d’actions citoyens & éphémères</h2>
+					<h1>Missions <br> Publiques</h1>
+					<h2>Créateurs de <br> laboratoires d’actions citoyens & éphémères</h2>
 				</div>
 			</article>
 		</section>	
@@ -37,7 +60,7 @@
 	<section id="firstSection">
 		<article>
 			<p>
-				Cabinet conseil spécialisé dans la création participative, nous aidons à enrichir vos processus de décision, politiques stratégiques ou choix publics, grâce à l’expertise de non-experts. Que vous soyez décideur du secteur public ou privé, nous mobilisons pour vous les outils de la délibération démocratique. 
+				Cabinet conseil spécialisé dans la création participative, nous aidons à enrichir vos processus de décision, politiques stratégiques ou choix publics, grâce à l’expertise de non-experts.
 			</p>
 			<h2>
 				avec vous, nous faisons émerger la compétence du collectif !
@@ -109,7 +132,6 @@
             <header>
                     <article>
                         <h3>World Wide Views on Climate and Energy</h3>
-                        <img src="assets/img/logocop.png" alt="">
                     </article>
                     <article>
                         <h2>RASSEMBLER</h2>
@@ -179,7 +201,7 @@
             </div>
         </article>
 	</section>
-	<section id="sixSection">
+	<section id="sixthSection">
         <article><h2>Notre équipe</h2></article>
         <article>
             <ul>
@@ -295,14 +317,67 @@
             </ul>
         </article>
 	</section>
-	<section>
-
+    <section id="seventhSection">
+        <article>
+            <header>
+                <article>
+                    <h2>Notre Crédo</h2>
+                    <p>
+                        Travailler les défis auxquels l’humanité fait face, du local au global, en mettant les citoyens et les acteurs au cœur des décisions.
+                    </p>
+                </article>
+            </header>
+        </article>
     </section>
-    <section>
-
+    <section id="heigthSection">
+        <article>
+            <h2>
+                Contact
+            </h2>
+            <article>
+                <div>
+                    <img src="assets/img/map.png" alt="">
+                </div>
+                <div>
+                    <h3>Missions publiques</h3>
+                    <br>
+                    <br>
+                    <p>
+                        35 rue du Sentier
+                        <br>
+                        75002 Paris (France)
+                    </p>
+                    <br>
+                    <p>
+                        Tél. +33 (0)143 142 450
+                        <br>
+                        E-mail : info@missionspubliques.org
+                    </p>
+                    <ul>
+                        <li><a href=""><img src="assets/img/social/facebook.png" alt=""></a></li>
+                        <li><a href=""><img src="assets/img/social/twitter.png" alt=""></a></li>
+                        <li><a href=""><img src="assets/img/social/youtube.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </article>
+        </article>
     </section>
 	<footer>
-		
-	</footer>
+        <h3>Inscrivez-vous à notre newsletter
+        </h3>
+
+        <div id="mc_embed_signup">
+            <form action="https://missionspubliques.us17.list-manage.com/subscribe/post?u=1a7d278bf15240b83f956eae8&amp;id=1563b196ff" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Votre adresse e-mail" required>
+                    <input type="submit" value=">" name="subscribe" id="mc-embedded-subscribe" class="button">
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1a7d278bf15240b83f956eae8_1563b196ff" tabindex="-1" value=""></div>
+                </div>
+            </form>
+        </div>
+        <!--End mc_embed_signup-->
+        <img src="assets/img/footer.png" alt="">
+    </footer>
 </body>
 </html>
