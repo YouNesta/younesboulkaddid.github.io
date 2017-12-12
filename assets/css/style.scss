@@ -68,7 +68,7 @@ body{
     }
     section{
       height: 80vh;
-      background-image: url("../img/background.png");
+      background-image: url("../img/background.jpg");
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
@@ -172,7 +172,8 @@ body{
       div{
         display: inline-block;
         &:first-child{
-          width: 78%;
+          width: 70%;
+          margin-right: 15px;
         }
         &:last-child{
           width: 20%;
@@ -180,7 +181,8 @@ body{
         p{
           font-family: "Roboto Slab Light";
           font-size: 36px;
-          text-align: justify;
+          line-height: 54px;
+          text-align: left;
           padding-bottom: 25px;
         }
         footer{
@@ -237,6 +239,10 @@ body{
           position: relative;
           &>article{
             clear: both;
+            &:last-child{
+              position: relative;
+              top: 30px;
+            }
           }
           section{
             width: 48%;
@@ -258,6 +264,7 @@ body{
               text-transform: uppercase;
               font-family: "OpenSans Bold";
               font-size: 18px;
+              line-height: 25px;
             }
             img{
               width: 100%;
@@ -267,6 +274,7 @@ body{
               font-size: 28px;
               text-transform: uppercase;
               font-family: "Roboto Slab Light";
+              line-height: 38px;
               .bold{
                 font-family: "Roboto Slab Bold";
               }
@@ -288,7 +296,8 @@ body{
             width: 20%;
             color: #fff;
             p{
-              font-size: 2.5em;
+              font-size: 28px;
+              line-height: 39px;
               font-family: "Roboto Slab Light";
             }
           }
@@ -296,8 +305,10 @@ body{
             width: 79%;
             text-align: right;
             li{
+              text-align: center;
               display: inline-block;
-              width: 30%;
+              padding: 15px 0px;
+              width: 20%;
               vertical-align: middle;
             }
           }
@@ -372,7 +383,6 @@ body{
                 font-family: "Roboto Slab Light";
                 font-size: 24px;
                 line-height: 35px;
-                text-transform: uppercase;
               }
 
           }
@@ -393,7 +403,6 @@ body{
       }
       article>article{
         font-size: 1.3em;
-        height: 20vh;
         background-color: white;
         border: 30px solid white;
         overflow: hidden;
@@ -401,8 +410,8 @@ body{
           float: left;
           &:first-child{
             width: 45%;
-            img{
-              max-width: 100%;
+            iframe{
+              width: 100%;
             }
           }
           &:last-child{

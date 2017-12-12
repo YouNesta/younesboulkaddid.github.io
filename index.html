@@ -12,7 +12,7 @@
            We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+    <script src="assets/js/script.js"></script>
     <script>
         $(document).ready(function(){
             var scroll_start = 0;
@@ -27,6 +27,10 @@
                 }
             });
         });
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            offset: 60, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
+        });
+
     </script>
 </head>
 <body>
@@ -35,12 +39,12 @@
             <nav>
                 <div class="nav-link">
                     <ul>
-                        <li><a href="">Présentation</a></li>
-                        <li><a href="">Nos Réalisations</a></li>
-                        <li><a href="">Nos Partenaires</a></li>
-                        <li><a href="">Notre Équipe</a></li>
-                        <li><a href="">Notre Crédo</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="#firstSection">Présentation</a></li>
+                        <li><a href="#fourthSection">Nos Réalisations</a></li>
+                        <li><a href="#fifthSection">Nos Partenaires</a></li>
+                        <li><a href="#sixthSection">Notre Équipe</a></li>
+                        <li><a href="#seventhSection">Notre Crédo</a></li>
+                        <li><a href="#heigthSection">Contact</a></li>
                     </ul>
                 </div>
                 <div class="nav-langages">
@@ -85,9 +89,9 @@
                 <h3 class="turquoise">mise en œuvre</h3>
                 <ul>
                     <li>Création de protocoles</li>
-                    <li>Évaluation des apports</li>
                     <li>Mobilisation des écosystèmes</li>
                     <li>Accompagnement de la parole</li>
+                    <li>Évaluation</li>
                 </ul>
             </article>
             <article>
@@ -97,13 +101,13 @@
                         Analyses partagées
                     </li>
                     <li>
-                        Support à l’application
-                    </li>
-                    <li>
-                        Suivi des décideurs
-                    </li>
-                    <li>
                         Aide à la prise de décision
+                    </li>
+                    <li>
+                        Accompagnement des décideurs
+                    </li>
+                    <li>
+                        Mise en œuvre
                     </li>
                 </ul>
             </article>
@@ -148,7 +152,8 @@
                                     agence spatiale européenne
                                 </h4>
                                 <p>
-                                    <span class="bold">renforcer</span> l’intérêt pour la conquête spatiale en faisant appel à la compétence des citoyens européens
+                                    <span class="bold">faire entrer</span>
+                                    la compétence du citoyen dans la gouvernance des politiques spatiales
                                 </p>
                             </article>
                     </section>
@@ -185,18 +190,21 @@
             </div>
             <div>
                 <ul>
+                    <li><img src="assets/img/partenaires/dbt-logo-rgb-centered-baseline-simple_3_decks.png" alt=""></li>
+                    <li><img src="assets/img/partenaires/Calque%2010.png" alt=""></li>
+                    <li><img src="assets/img/partenaires/Calque%209.png" alt=""></li>
+                    <li><img src="assets/img/partenaires/ESA.png" alt=""></li>
+
+                    <li><img src="assets/img/partenaires/vinci.png" alt=""></li>
+                    <li><img src="assets/img/partenaires/haute-garonne.png" alt=""></li>
+
                     <li><img src="assets/img/partenaires/airbus.png" alt=""></li>
                     <li><img src="assets/img/partenaires/allianz.png" alt=""></li>
-                    <li><img src="assets/img/partenaires/Calque%209.png" alt=""></li>
-                    <li><img src="assets/img/partenaires/Calque%2010.png" alt=""></li>
-                    <li><img src="assets/img/partenaires/Calque%2011.png" alt=""></li>
-                    <li><img src="assets/img/partenaires/dbt-logo-rgb-centered-baseline-simple_3_decks.png" alt=""></li>
-                    <li><img src="assets/img/partenaires/ESA.png" alt=""></li>
-                    <li><img src="assets/img/partenaires/haute-garonne.png" alt=""></li>
                     <li><img src="assets/img/partenaires/logo%20république.png" alt=""></li>
-                    <li><img src="assets/img/partenaires/nantes.png" alt=""></li>
                     <li><img src="assets/img/partenaires/région%20centre.png" alt=""></li>
-                    <li><img src="assets/img/partenaires/vinci.png" alt=""></li>
+                    <li><img src="assets/img/partenaires/nantes.png" alt=""></li>
+
+                    <li><img src="assets/img/partenaires/Calque%2011.png" alt=""></li>
                 </ul>
             </div>
         </article>
@@ -206,50 +214,13 @@
         <article>
             <ul>
                 <li>
-                    <div>
-                        <img src="assets/img/equipe/judith.png" alt="">
+                    <div><img src="assets/img/equipe/elian.png" alt="">
                         <ul>
                             <li>
-                                <h3>Judith FERRANDO</h3>
+                                <h3>Elian BELON</h3>
                             </li>
                             <li>
-                                <h4>Co-directrice</h4>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <div><img src="assets/img/equipe/morgane.png" alt="">
-                        <ul>
-                            <li>
-                                <h3>Morgane CHRÉTIEN</h3>
-                            </li>
-                            <li>
-                                <h4>Consultante</h4>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <div><img src="assets/img/equipe/yves.png" alt="">
-                        <ul>
-                            <li>
-                                <h3>Yves MATHIEU</h3>
-                            </li>
-                            <li>
-                                <h4>Co-directeur</h4>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <div><img src="assets/img/equipe/typhanie.png" alt="">
-                        <ul>
-                            <li>
-                                <h3>Typhanie SCOGNAMIGLIO</h3>
-                            </li>
-                            <li>
-                                <h4>International project manager</h4>
+                                <h4>Consultant</h4>
                             </li>
                         </ul>
                     </div>
@@ -259,6 +230,18 @@
                         <ul>
                             <li>
                                 <h3>Carmen BOULEY DE SANTIAGO</h3>
+                            </li>
+                            <li>
+                                <h4>Consultante</h4>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div><img src="assets/img/equipe/morgane.png" alt="">
+                        <ul>
+                            <li>
+                                <h3>Morgane CHRÉTIEN</h3>
                             </li>
                             <li>
                                 <h4>Consultante</h4>
@@ -291,10 +274,35 @@
                     </div>
                 </li>
                 <li>
-                    <div><img src="assets/img/equipe/antoine.png" alt="">
+                    <div>
+                        <img src="assets/img/equipe/judith.png" alt="">
                         <ul>
                             <li>
-                                <h3>Antoine VERGNE</h3>
+                                <h3>Judith FERRANDO</h3>
+                            </li>
+                            <li>
+                                <h4>Co-directrice</h4>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                       <li>
+                    <div><img src="assets/img/equipe/yves.png" alt="">
+                        <ul>
+                            <li>
+                                <h3>Yves MATHIEU</h3>
+                            </li>
+                            <li>
+                                <h4>Co-directeur</h4>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div><img src="assets/img/equipe/typhanie.png" alt="">
+                        <ul>
+                            <li>
+                                <h3>Typhanie SCOGNAMIGLIO</h3>
                             </li>
                             <li>
                                 <h4>International project manager</h4>
@@ -303,13 +311,13 @@
                     </div>
                 </li>
                 <li>
-                    <div><img src="assets/img/equipe/elian.png" alt="">
+                    <div><img src="assets/img/equipe/antoine.png" alt="">
                         <ul>
                             <li>
-                                <h3>Elian BELON</h3>
+                                <h3>Antoine VERGNE</h3>
                             </li>
                             <li>
-                                <h4>Consultant</h4>
+                                <h4>International project manager</h4>
                             </li>
                         </ul>
                     </div>
@@ -336,7 +344,12 @@
             </h2>
             <article>
                 <div>
-                    <img src="assets/img/map.png" alt="">
+                    <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.3867546250053!2d2.3438300156747673!3d48.869903279288536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e16223678b5%3A0xcbf4f7e92344b38c!2s35+Rue+du+Sentier%2C+75002+Paris!5e0!3m2!1sfr!2sfr!4v1513122328323"
+                            height="200"
+                            frameborder="0"
+                            style="border:0"
+                            allowfullscreen></iframe>
                 </div>
                 <div>
                     <h3>Missions publiques</h3>
@@ -354,9 +367,9 @@
                         E-mail : info@missionspubliques.org
                     </p>
                     <ul>
-                        <li><a href=""><img src="assets/img/social/facebook.png" alt=""></a></li>
-                        <li><a href=""><img src="assets/img/social/twitter.png" alt=""></a></li>
-                        <li><a href=""><img src="assets/img/social/youtube.png" alt=""></a></li>
+                        <li><a target="_blank" href="https://www.facebook.com/missionspubliques/"><img src="assets/img/social/facebook.png" alt=""></a></li>
+                        <li><a target="_blank" href="https://twitter.com/MPubliques"><img src="assets/img/social/twitter.png" alt=""></a></li>
+ <!--                       <li><a href=""><img src="assets/img/social/youtube.png" alt=""></a></li> -->
                     </ul>
                 </div>
             </article>
