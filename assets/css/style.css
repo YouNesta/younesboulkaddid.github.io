@@ -354,7 +354,7 @@ body {
     display: none; }
   body header section {
     background-position: -200px;
-    background-position: initial; }
+    background-attachment: initial; }
     body header section article div h1 {
       font-size: 35px; }
     body header section article div h2 {
