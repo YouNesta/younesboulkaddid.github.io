@@ -354,7 +354,7 @@ body {
     display: none; }
   body header section {
     background-position: -200px;
-    background-size: 100vw; }
+    background-size: cover; }
     body header section article div h1 {
       font-size: 35px; }
     body header section article div h2 {
