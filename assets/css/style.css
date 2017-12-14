@@ -457,6 +457,7 @@ body {
       body section#fifthSection article div:first-child p {
         font-size: 28px;
         line-height: 39px;
+        width: 100%;
         font-family: "Roboto Slab Light"; }
     body section#fifthSection article div:last-child {
       width: 100%;

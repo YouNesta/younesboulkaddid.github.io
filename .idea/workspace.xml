@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb671205-94fb-46a4-b8ab-84472f6942f4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css.map" afterPath="$PROJECT_DIR$/assets/css/style.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.scss" afterPath="$PROJECT_DIR$/assets/css/style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -84,8 +81,8 @@
           <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assets/css/style.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="524">
-                  <caret line="775" column="21" lean-forward="false" selection-start-line="775" selection-start-column="21" selection-end-line="775" selection-end-column="21" />
+                <state relative-caret-position="434">
+                  <caret line="660" column="27" lean-forward="false" selection-start-line="660" selection-start-column="27" selection-end-line="660" selection-end-column="27" />
                   <folding>
                     <element signature="e#133#1845#0" expanded="false" />
                     <element signature="e#1850#1890#0" expanded="false" />
@@ -98,10 +95,9 @@
                     <element signature="e#11377#11743#0" expanded="false" />
                     <element signature="e#11764#12342#0" expanded="false" />
                     <element signature="e#12364#13831#0" expanded="false" />
-                    <element signature="e#13852#14428#0" expanded="false" />
-                    <element signature="e#14449#14705#0" expanded="false" />
-                    <element signature="e#14728#15588#0" expanded="false" />
-                    <element signature="e#15610#16548#0" expanded="false" />
+                    <element signature="e#14478#14734#0" expanded="false" />
+                    <element signature="e#14757#15617#0" expanded="false" />
+                    <element signature="e#15639#16577#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -274,12 +270,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1512837471320</updated>
-      <workItem from="1512837473358" duration="49661000" />
+      <workItem from="1512837473358" duration="49746000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49661000" />
+    <option name="totallyTimeSpent" value="49746000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="0" width="1360" height="768" extended-state="0" />
@@ -414,8 +410,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="775" column="21" lean-forward="false" selection-start-line="775" selection-start-column="21" selection-end-line="775" selection-end-column="21" />
+        <state relative-caret-position="434">
+          <caret line="660" column="27" lean-forward="false" selection-start-line="660" selection-start-column="27" selection-end-line="660" selection-end-column="27" />
           <folding>
             <element signature="e#133#1845#0" expanded="false" />
             <element signature="e#1850#1890#0" expanded="false" />
@@ -428,10 +424,9 @@
             <element signature="e#11377#11743#0" expanded="false" />
             <element signature="e#11764#12342#0" expanded="false" />
             <element signature="e#12364#13831#0" expanded="false" />
-            <element signature="e#13852#14428#0" expanded="false" />
-            <element signature="e#14449#14705#0" expanded="false" />
-            <element signature="e#14728#15588#0" expanded="false" />
-            <element signature="e#15610#16548#0" expanded="false" />
+            <element signature="e#14478#14734#0" expanded="false" />
+            <element signature="e#14757#15617#0" expanded="false" />
+            <element signature="e#15639#16577#0" expanded="false" />
           </folding>
         </state>
       </provider>
