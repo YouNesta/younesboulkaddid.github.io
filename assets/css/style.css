@@ -147,7 +147,7 @@ body {
     padding: 3% 10%;
     width: 100vw;
     margin: 0 -13%;
-    background-image: url("../img/paris.png");
+    background-image: url("../img/paris.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -291,6 +291,8 @@ body {
       color: #23c7ee;
       margin-top: 60px;
       margin-bottom: 36px; }
+    body section#heigthSection article {
+      margin: 30px auto; }
     body section#heigthSection article > article {
       font-size: 1.3em;
       background-color: white;
@@ -323,6 +325,10 @@ body {
     text-align: center;
     padding: 50px 0;
     background-color: #23c7ee; }
+    body > footer .desktop {
+      display: block; }
+    body > footer .mobile {
+      display: none; }
     body > footer h3 {
       font-family: "Roboto Slab Bold";
       color: white;
@@ -341,5 +347,178 @@ body {
         body > footer form input[type="submit"] {
           background-color: #0094c9;
           color: #ffffff; }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  body header nav div.nav-link {
+    display: none; }
+  body header section {
+    background-position: -200px; }
+    body header section article div h1 {
+      font-size: 35px; }
+    body header section article div h2 {
+      font-size: 22px; }
+  body section h2 {
+    font-size: 30px; }
+  body section#firstSection {
+    text-align: left; }
+    body section#firstSection p {
+      font-size: 18px;
+      width: 100%; }
+    body section#firstSection h2 {
+      width: 100%;
+      font-size: 20px; }
+  body section#secondSection h2 {
+    font-size: 30px;
+    margin: 10% 0; }
+  body section#secondSection article > article {
+    display: block;
+    width: 100%;
+    margin-bottom: 10%; }
+    body section#secondSection article > article h3 {
+      display: block; }
+    body section#secondSection article > article ul {
+      color: #706a6f; }
+      body section#secondSection article > article ul li {
+        margin: 15px 0; }
+  body section#thirdSection {
+    height: auto; }
+    body section#thirdSection div {
+      display: inline-block; }
+      body section#thirdSection div:first-child {
+        width: 60%;
+        margin-right: 15px; }
+      body section#thirdSection div:last-child {
+        width: 20%; }
+      body section#thirdSection div p {
+        font-size: 20px;
+        line-height: 1;
+        text-align: left; }
+      body section#thirdSection div footer {
+        text-align: left;
+        font-size: 15px;
+        margin-top: -10%; }
+      body section#thirdSection div img {
+        width: 25vw;
+        position: relative;
+        top: -3vh; }
+  body section#fourthSection > article {
+    padding: 0 0;
+    width: 80vw; }
+    body section#fourthSection > article > h2 {
+      padding: 1.5% 0;
+      font-size: 30px; }
+    body section#fourthSection > article > header {
+      padding: 0 0 35% 0;
+      background-attachment: initial;
+      background-position: -42vw 0;
+      background-size: 250%;
+      margin: auto;
+      width: auto; }
+      body section#fourthSection > article > header article {
+        width: 70%;
+        margin: 0 0;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 25px 0 0 10px; }
+        body section#fourthSection > article > header article:first-child h3 {
+          margin: 0;
+          font-size: 23px;
+          color: #23c7ee; }
+        body section#fourthSection > article > header article:last-child {
+          padding-bottom: 25px; }
+          body section#fourthSection > article > header article:last-child h2 {
+            margin: 0 0 0 0px;
+            font-size: 28px; }
+          body section#fourthSection > article > header article:last-child p {
+            font-size: 28px;
+            line-height: 35px; }
+    body section#fourthSection > article > article section {
+      width: 100%; }
+      body section#fourthSection > article > article section.left {
+        float: none; }
+      body section#fourthSection > article > article section.right {
+        float: none; }
+      body section#fourthSection > article > article section.text {
+        padding-top: 0; }
+      body section#fourthSection > article > article section p {
+        font-size: 18px; }
+  body section#fifthSection article div {
+    display: inline-block; }
+    body section#fifthSection article div:first-child {
+      float: none;
+      width: 100%; }
+      body section#fifthSection article div:first-child p {
+        font-size: 28px;
+        line-height: 39px;
+        font-family: "Roboto Slab Light"; }
+    body section#fifthSection article div:last-child {
+      width: 100%;
+      text-align: center; }
+      body section#fifthSection article div:last-child li {
+        width: 30%; }
+        body section#fifthSection article div:last-child li img {
+          width: 90%; }
+  body section#sixthSection article > ul > li {
+    display: block;
+    width: 100%; }
+    body section#sixthSection article > ul > li div ul {
+      left: 35%; }
+  body section#seventhSection > article > header {
+    padding: 0;
+    width: auto;
+    margin: 10% 0 0 0%;
+    background-attachment: initial;
+    background-position: -90vw 0;
+    position: relative;
+    background-size: 250%;
+    height: 60vh; }
+    body section#seventhSection > article > header article {
+      position: absolute;
+      left: 0;
+      width: auto;
+      margin: 0% 0%;
+      padding: 10px;
+      bottom: 0;
+      background: linear-gradient(to top, black, rgba(255, 255, 255, 0));
+      /* Standard syntax (must be last) */ }
+      body section#seventhSection > article > header article h2 {
+        margin: 3% 0 5px 0px;
+        font-size: 30px; }
+      body section#seventhSection > article > header article p {
+        font-size: 18px;
+        line-height: 32px; }
+  body section#heigthSection h2 {
+    font-family: Roboto Slab Bold;
+    color: #23c7ee;
+    margin-top: 30px;
+    margin-bottom: 5px; }
+  body section#heigthSection article > article {
+    border: 15px solid white; }
+    body section#heigthSection article > article div:first-child {
+      width: 100%; }
+      body section#heigthSection article > article div:first-child iframe {
+        width: 100%; }
+    body section#heigthSection article > article div:last-child {
+      border-left: 0px; }
+    body section#heigthSection article > article div h3 {
+      font-family: "Roboto Slab Bold";
+      color: #23c7ee;
+      display: inline;
+      font-size: 24px; }
+    body section#heigthSection article > article div p {
+      font-family: "Roboto Slab Light";
+      color: #706a6f;
+      font-size: 18px;
+      line-height: 25px; }
+    body section#heigthSection article > article div ul {
+      margin-top: 10px; }
+      body section#heigthSection article > article div ul li {
+        display: inline-block; }
+  body > footer .desktop {
+    display: none; }
+  body > footer .mobile {
+    display: block;
+    width: 70%;
+    margin: auto; } }
 
 /*# sourceMappingURL=style.css.map */
