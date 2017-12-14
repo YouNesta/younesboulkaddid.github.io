@@ -353,8 +353,7 @@ body {
   body header nav div.nav-link {
     display: none; }
   body header section {
-    background-position: -200px;
-    background-size: cover; }
+    background-position: -200px; }
     body header section article div h1 {
       font-size: 35px; }
     body header section article div h2 {
