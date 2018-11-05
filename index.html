@@ -1,398 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="assets/css/reset.css">
-	<link rel="stylesheet" href="assets/css/style.css">
-    <!-- Begin MailChimp Signup Form -->
-    <style type="text/css">
-        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-    </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets/js/script.js"></script>
-    <script>
-        $(document).ready(function(){
-            var scroll_start = 0;
-            var startchange = $('body');
-            var offset = startchange.offset();
-            $(document).scroll(function() {
-                scroll_start = $(this).scrollTop();
-                if(scroll_start > offset.top) {
-                    $('#nav').css('background-color', '#23c7ee');
-                } else {
-                    $('#nav').css('background-color', 'transparent');
-                }
-            });
-        });
-        var scroll = new SmoothScroll('a[href*="#"]', {
-            offset: 60, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
-        });
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>LBC MOVIES</title>
+  <script src="https://kraaden.github.io/autocomplete/autocomplete.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://kraaden.github.io/autocomplete/autocomplete.css">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
 
-    </script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
 </head>
+
 <body>
-	<header>
-		<div id="nav">
-            <nav>
-                <div class="nav-link">
-                    <ul>
-                        <li><a href="#firstSection">Présentation</a></li>
-                        <li><a href="#fourthSection">Nos Réalisations</a></li>
-                        <li><a href="#fifthSection">Nos Partenaires</a></li>
-                        <li><a href="#sixthSection">Notre Équipe</a></li>
-                        <li><a href="#seventhSection">Notre Crédo</a></li>
-                        <li><a href="#heigthSection">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="nav-langages">
-                    <a href="" class="current">FR</a>/<a href="">EN</a>
-                </div>
-            </nav>
-        </div>
-		<section>
-			<article>
-				<div>
-					<h1>Missions <br> Publiques</h1>
-					<h2>Créateurs de <br> laboratoires d’actions citoyens</h2>
-				</div>
-			</article>
-		</section>	
-	</header>
-	<section id="firstSection">
-		<article>
-			<p>
-				Cabinet conseil spécialisé dans la création participative, nous aidons à enrichir vos processus de décision, politiques stratégiques ou choix publics, grâce à l’expertise de non-experts.
-			</p>
-			<h2>
-				avec vous, nous faisons émerger la compétence du collectif !
-			</h2>
-		</article>
-	</section>
-	<section id="secondSection">
-		<article>
-            <h2>
-                notre méthode en 12 points clés
-            </h2>
-            <article>
-                <h3 class="blue">conseil</h3>
-                <ul>
-                    <li>Accompagnement stratégique</li>
-                    <li>Conception de processus agiles</li>
-                    <li>Mobilisation de partenaires</li>
-                    <li>Capacitation et Formation</li>
-                </ul>
-            </article>
-            <article>
-                <h3 class="turquoise">réalisation</h3>
-                <ul>
-                    <li>Création de protocoles</li>
-                    <li>Mobilisation des écosystèmes</li>
-                    <li>Accompagnement de la parole</li>
-                    <li>Évaluation</li>
-                </ul>
-            </article>
-            <article>
-                <h3 class="green">suivi</h3>
-                <ul>
-                    <li>
-                        Analyses partagées
-                    </li>
-                    <li>
-                        Aide à la prise de décision
-                    </li>
-                    <li>
-                        Accompagnement des décideurs
-                    </li>
-                    <li>
-                        Mise en œuvre
-                    </li>
-                </ul>
-            </article>
-        </article>
-	</section>
-	<section id="thirdSection">
-		<article>
-            <div>
-                <p>
-                    « Le débat citoyen planétaire est la première ébauche concrète de démocratie planétaire. »
-                </p>
-                <footer>
-                    Edgar Morin, philosophe
-                </footer>
-            </div>
-            <div>
-                <img src="assets/img/portrait.png" alt="">
-            </div>
-		</article>
-	</section>
-	<section id="fourthSection">
-        <article>
-            <h2>
-                nos réalisations
-            </h2>
-            <header>
-                    <article>
-                        <h3>World Wide Views on Climate and Energy</h3>
-                    </article>
-                    <article>
-                        <h2>RASSEMBLER</h2>
-                        <p>
-                            les opinions éclairées des citoyens de 76 pays et 5 continents autour de l’accord de paris
-                        </p>
-                    </article>
-            </header>
-            <article>
-                <article>
+  <div class="container">
+    <h1 class="text-center">⭐️BE A MOVIE STAR️️⭐️</h1>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">🎥</span>
+      </div>
+      <input type="text" class="form-control" id="autocomplete" placeholder="Rechercher un film" aria-label="Rechercher un film"
+        aria-describedby="basic-addon1">
+    </div>
+    <table class="table" id="table">
+      <tr>
+        <th>VU</th>
+        <th>NOM DU FILM</th>
+        <th>Supprimer</th>
+      </tr>
+    </table>
+  </div>
 
-                    <section class="right">
-                        <img src="assets/img/space.png" alt="">
-                    </section>
-                    <section class="text left">
-                            <article>
-                                <h4>
-                                    agence spatiale européenne
-                                </h4>
-                                <p>
-                                    <span class="bold">faire entrer</span>
-                                    la compétence du citoyen dans la gouvernance des politiques spatiales
-                                </p>
-                            </article>
-                    </section>
-                </article>
-                <article>
-                    <section class="left">
-                        <img src="assets/img/multiface.png" alt="">
-                    </section>
-                    <section class="text right">
-                      <article>
-                          <h4>
-                              agences publiques de santé
-                          </h4>
-                          <p>
-                              <span class="bold">rénover</span> les politiques de santé grâce à l’expertise des citoyens et des professionnels de santé
-                          </p>
-                      </article>
-                    </section>
-                </article>
-            </article>
-        </article>
+  <script src="./script/index.js"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 
-	</section>
-    <section id="fifthSection">
-         <article>
-            <div>
-                <h2>Notre reseau de Partenaires</h2>
-                <p>
-                    Nous nous appuyons sur plus de 200 partenaires dans le monde
-                </p>
-            </div>
-            <div>
-                <ul>
-                    <li><img src="assets/img/partenaires/dbt-logo-rgb-centered-baseline-simple_3_decks.png" alt=""></li>
-                    <li><img src="assets/img/partenaires/Calque%2010.png" alt=""></li>
-                    <li><img src="assets/img/partenaires/Calque%209.png" alt=""></li>
-                    <li><img src="assets/img/partenaires/ESA.png" alt=""></li>
-
-                    <li><img src="assets/img/partenaires/vinci.png" alt=""></li>
-                    <li><img src="assets/img/partenaires/haute-garonne.png" alt=""></li>
-
-                    <li><img src="assets/img/partenaires/airbus.png" alt=""></li>
-                    <li><img src="assets/img/partenaires/allianz.png" alt=""></li>
-                    <li><img src="assets/img/partenaires/logo%20république.png" alt=""></li>
-                    <li><img src="assets/img/partenaires/région%20centre.png" alt=""></li>
-                    <li><img src="assets/img/partenaires/nantes.png" alt=""></li>
-
-                    <li><img src="assets/img/partenaires/Calque%2011.png" alt=""></li>
-                </ul>
-            </div>
-        </article>
-	</section>
-	<section id="sixthSection">
-        <article><h2>Notre équipe</h2></article>
-        <article>
-            <ul>
-                <li>
-                    <div><img src="assets/img/equipe/elian.png" alt="">
-                        <ul>
-                            <li>
-                                <h3>Elian BELON</h3>
-                            </li>
-                            <li>
-                                <h4>Consultant</h4>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <div><img src="assets/img/equipe/carment.png" alt="">
-                        <ul>
-                            <li>
-                                <h3>Carmen BOULEY DE SANTIAGO</h3>
-                            </li>
-                            <li>
-                                <h4>Consultante</h4>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <div><img src="assets/img/equipe/morgane.png" alt="">
-                        <ul>
-                            <li>
-                                <h3>Morgane CHRÉTIEN</h3>
-                            </li>
-                            <li>
-                                <h4>Consultante</h4>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <div><img src="assets/img/equipe/erwan.png" alt="">
-                        <ul>
-                            <li>
-                                <h3>Erwan DAGORNE</h3>
-                            </li>
-                            <li>
-                                <h4>Consultant</h4>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <div><img src="assets/img/equipe/tifenn.png" alt="">
-                        <ul>
-                            <li>
-                                <h3>Tifenn DURAND</h3>
-                            </li>
-                            <li>
-                                <h4>Consultante senior</h4>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <img src="assets/img/equipe/judith.png" alt="">
-                        <ul>
-                            <li>
-                                <h3>Judith FERRANDO</h3>
-                            </li>
-                            <li>
-                                <h4>Co-directrice</h4>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                       <li>
-                    <div><img src="assets/img/equipe/yves.png" alt="">
-                        <ul>
-                            <li>
-                                <h3>Yves MATHIEU</h3>
-                            </li>
-                            <li>
-                                <h4>Co-directeur</h4>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <div><img src="assets/img/equipe/typhanie.png" alt="">
-                        <ul>
-                            <li>
-                                <h3>Typhanie SCOGNAMIGLIO</h3>
-                            </li>
-                            <li>
-                                <h4>International project manager</h4>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <div><img src="assets/img/equipe/antoine.png" alt="">
-                        <ul>
-                            <li>
-                                <h3>Antoine VERGNE</h3>
-                            </li>
-                            <li>
-                                <h4>International project manager</h4>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </article>
-	</section>
-    <section id="seventhSection">
-        <article>
-            <header>
-                <article>
-                    <h2>Notre Crédo</h2>
-                    <p>
-                        Travailler les défis auxquels l’humanité fait face, du local au global, en mettant les citoyens et les acteurs au cœur des décisions.
-                    </p>
-                </article>
-            </header>
-        </article>
-    </section>
-    <section id="heigthSection">
-        <article>
-            <h2>
-                Contact
-            </h2>
-            <article>
-                <div>
-                    <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.3867546250053!2d2.3438300156747673!3d48.869903279288536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e16223678b5%3A0xcbf4f7e92344b38c!2s35+Rue+du+Sentier%2C+75002+Paris!5e0!3m2!1sfr!2sfr!4v1513122328323"
-                            height="200"
-                            frameborder="0"
-                            style="border:0"
-                            allowfullscreen></iframe>
-                </div>
-                <div>
-                    <h3>Missions publiques</h3>
-                    <br>
-                    <br>
-                    <p>
-                        35 rue du Sentier
-                        <br>
-                        75002 Paris (France)
-                    </p>
-                    <br>
-                    <p>
-                        Tél. +33 (0)143 142 450
-                        <br>
-                        E-mail : info@missionspubliques.org
-                    </p>
-                    <ul>
-                        <li><a target="_blank" href="https://www.facebook.com/missionspubliques/"><img src="assets/img/social/facebook.png" alt=""></a></li>
-                        <li><a target="_blank" href="https://twitter.com/MPubliques"><img src="assets/img/social/twitter.png" alt=""></a></li>
- <!--                       <li><a href=""><img src="assets/img/social/youtube.png" alt=""></a></li> -->
-                    </ul>
-                </div>
-            </article>
-        </article>
-    </section>
-	<footer>
-        <h3>Inscrivez-vous à notre newsletter
-        </h3>
-
-        <div id="mc_embed_signup">
-            <form action="https://missionspubliques.us17.list-manage.com/subscribe/post?u=1a7d278bf15240b83f956eae8&amp;id=1563b196ff" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <div id="mc_embed_signup_scroll">
-                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Votre adresse e-mail" required>
-                    <input type="submit" value=">" name="subscribe" id="mc-embedded-subscribe" class="button">
-                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1a7d278bf15240b83f956eae8_1563b196ff" tabindex="-1" value=""></div>
-                </div>
-            </form>
-        </div>
-        <!--End mc_embed_signup-->
-        <img class="desktop" src="assets/img/footer.png" alt="">
-        <img class="mobile" src="assets/img/footermobile.png" alt="">
-    </footer>
 </body>
+
 </html>
