@@ -34,7 +34,7 @@ autocomplete({
       });
   },
   onSelect: function(item) {
-    let tableau = document.getElementById("tableau");
+    let tableau = document.getElementById("table");
 
     //Create a full line for a single movie
     let line = document.createElement("tr");
@@ -62,6 +62,8 @@ autocomplete({
     let DeleteCells = document.createElement("td");
     let deleteButton = document.createElement("button");
     deleteButton.onclick = () => deleteLine(encodeURI(item.value));
+    deleteButton.classList.add("btn");
+    deleteButton.classList.add("btn-danger");
     let buttonText = document.createTextNode("DELETE");
     deleteButton.appendChild(buttonText);
     DeleteCells.appendChild(deleteButton);
